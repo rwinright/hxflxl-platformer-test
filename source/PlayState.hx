@@ -18,7 +18,6 @@ class PlayState extends FlxState
 	{
 		map = new FlxOgmo3Loader(AssetPaths.Untitled__ogmo, AssetPaths.Level1__json);
 		ground = map.loadTilemap("assets/images/micrometroidvania0x72.v2.png", 'ground');
-		// ground.allowCollisions = FlxObject.UP;
 		background_layer = map.loadTilemap("assets/images/micrometroidvania0x72.v2.png", 'background_layer');
 		add(background_layer);
 		add(ground);
