@@ -1,0 +1,76 @@
+{"frames": [
+
+{
+	"filename": "player-idle-0.png",
+	"frame": {"x":0,"y":0,"w":13,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":13,"h":11},
+	"sourceSize": {"w":13,"h":11}
+},
+{
+	"filename": "player-idle-1.png",
+	"frame": {"x":0,"y":11,"w":13,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":13,"h":11},
+	"sourceSize": {"w":13,"h":11}
+},
+{
+	"filename": "player-idle-2.png",
+	"frame": {"x":0,"y":22,"w":13,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":13,"h":11},
+	"sourceSize": {"w":13,"h":11}
+},
+{
+	"filename": "player-idle-4.png",
+	"frame": {"x":0,"y":33,"w":13,"h":10},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":13,"h":10},
+	"sourceSize": {"w":13,"h":11}
+},
+{
+	"filename": "player-jump-0.png",
+	"frame": {"x":0,"y":43,"w":13,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":13,"h":11},
+	"sourceSize": {"w":13,"h":11}
+},
+{
+	"filename": "player-run-0.png",
+	"frame": {"x":0,"y":54,"w":13,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":13,"h":11},
+	"sourceSize": {"w":13,"h":11}
+},
+{
+	"filename": "player-run-1.png",
+	"frame": {"x":0,"y":65,"w":13,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":13,"h":11},
+	"sourceSize": {"w":13,"h":11}
+},
+{
+	"filename": "player-run-2.png",
+	"frame": {"x":0,"y":76,"w":13,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":13,"h":11},
+	"sourceSize": {"w":13,"h":11}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "player-sprites-0.png",
+	"format": "RGBA8888",
+	"size": {"w":13,"h":87},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:cdd641fc4bab5ecca04ab05e45bfa774:4bca61705d6934ba1c1506f92b3d040e:e2b91b6fa69167cd6d21ef0db2941dde$"
+}
+}

@@ -29,7 +29,7 @@ class PlayState extends FlxState
 		}, 'Player');
 		add(player);
 
-		camera.follow(player, LOCKON, 5);
+		camera.follow(player, LOCKON, 0.1);
 		camera.zoom = 2;
 		camera.setScrollBoundsRect(0, 0, 640, 480);
 		super.create();
