@@ -35,7 +35,7 @@ class Player extends FlxSprite
 
 		velocity.x = moveDir * 100;
 
-		if (FlxG.keys.anyJustPressed([UP, W]) && isTouching(FlxObject.FLOOR))
+		if (FlxG.keys.anyJustPressed([UP, W, SPACE]) && isTouching(FlxObject.FLOOR))
 			velocity.y = -250;
 		if (velocity.x == 0 && isTouching(FlxObject.FLOOR))
 			animation.play("idle");
