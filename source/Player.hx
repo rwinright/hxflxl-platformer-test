@@ -2,7 +2,6 @@ import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
-import flixel.util.FlxColor;
 
 class Player extends FlxSprite
 {
@@ -26,20 +25,17 @@ class Player extends FlxSprite
 		var right = FlxG.keys.anyPressed([RIGHT, D]) ? 1 : 0;
 		moveDir = right - left;
 
-		if (moveDir < 0)
-			flipX = true;
-		else if (moveDir > 0)
-			flipX = false;
+		flipX = moveDir < 0 ? true : moveDir > 0 ? false : flipX;
 
 		velocity.x = moveDir * 100;
 
-		if (FlxG.keys.anyJustPressed([UP, W, SPACE]) && isTouching(FlxObject.FLOOR))
+		if (FlxG.keys.anyJustPressed([UP, W, SPACE]) && isTouching(FLOOR))
 			velocity.y = -250;
-		if (velocity.x == 0 && isTouching(FlxObject.FLOOR))
+		if (velocity.x == 0 && isTouching(FLOOR))
 			animation.play("idle");
-		else if (isTouching(FlxObject.FLOOR))
+		else if (isTouching(FLOOR))
 			animation.play("run");
-		else if (!isTouching(FlxObject.FLOOR))
+		else if (!isTouching(FLOOR))
 			animation.play("jump");
 		super.update(elapsed);
 	}

@@ -5,7 +5,6 @@ import flixel.FlxObject;
 import flixel.FlxState;
 import flixel.addons.editors.ogmo.FlxOgmo3Loader;
 import flixel.tile.FlxTilemap;
-import flixel.util.FlxCollision;
 
 class PlayState extends FlxState
 {
@@ -22,7 +21,7 @@ class PlayState extends FlxState
 		add(background_layer);
 		add(ground);
 
-		map.loadEntities((entity : EntityData) ->
+		map.loadEntities((entity:EntityData) ->
 		{
 			player = new Player(entity.x, entity.y - 5);
 		}, 'Player');
@@ -36,7 +35,7 @@ class PlayState extends FlxState
 
 	override public function update(elapsed:Float)
 	{
-		FlxG.collide(player, ground);
+		inline FlxG.collide(player, ground);
 		super.update(elapsed);
 	}
 }
